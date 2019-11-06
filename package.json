@@ -1,0 +1,24 @@
+{
+	"name": "@tggr/vue-mixins",
+	"version": "0.0.1",
+	"description": "A group of mixins which are regularly used in the production of my games",
+	"main": "index.js",
+	"scripts": {
+		"test": "npm run test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com:TiggerStudio/vue-mixins.git"
+	},
+	"keywords": [
+		"Mixins",
+		"Vue",
+		"Methods"
+	],
+	"author": "Sil van Diepen",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/silvandiepen/vue-game-mixins/issues"
+	},
+	"homepage": "https://github.com/silvandiepen/vue-game-mixins#readme"
+}
