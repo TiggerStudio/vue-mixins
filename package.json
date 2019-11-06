@@ -1,6 +1,6 @@
 {
 	"name": "@tggr/vue-mixins",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "A group of mixins which are regularly used in the production of my games",
 	"main": "index.js",
 	"scripts": {
