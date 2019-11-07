@@ -48,6 +48,9 @@ export const Numbers = {
 	methods: {
 		Random(min, max) {
 			return Math.floor(Math.random() * (+max - +min)) + +min;
+		},
+		isOdd(num) {
+			return num % 2;
 		}
 	}
 };
@@ -65,5 +68,20 @@ export const Animation = {
 			window.msRequestAnimationFrame;
 		this.cancelAnimationFrame =
 			window.cancelAnimationFrame || window.mozCancelAnimationFrame;
+	}
+};
+
+export const Color = {
+	methods: {
+		hexToRgb(hex) {
+			var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+			return result
+				? {
+						r: parseInt(result[1], 16),
+						g: parseInt(result[2], 16),
+						b: parseInt(result[3], 16)
+				  }
+				: null;
+		}
 	}
 };
