@@ -40,6 +40,13 @@ export const Tiles = {
 			ctx.quadraticCurveTo(x, y, x + radius, y);
 			ctx.closePath();
 			return ctx;
+		},
+		fillGradient(ctx, from, to) {
+			let gradient = ctx.createLinearGradient(0, 0, 0, 170);
+			gradient.addColorStop(0, from);
+			gradient.addColorStop(1, to);
+			ctx.fillStyle = gradient;
+			return ctx;
 		}
 	}
 };
